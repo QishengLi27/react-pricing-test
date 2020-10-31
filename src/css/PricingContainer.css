@@ -1,0 +1,9 @@
+.container {
+    display: -webkit-box;
+    display: flex;
+    margin: 20px auto;
+  }
+  
+.toggle-container {
+text-align: center;
+}

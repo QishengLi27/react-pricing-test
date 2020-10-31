@@ -1,12 +1,12 @@
 import React from 'react';
 import PricingCard from './PricingCard.js'
+import '../css/PricingContainer.css'
 
-class PricingSectionContainer extends React.Component {
+class PricingContainer extends React.Component {
   
     render() {
-    //   const pricings = this.props.pricingsData.pricings;
         const {pricings = {}} = this.props.pricingsData;
-        
+
         let items = pricings.map((pricing,i)=>{
             return <PricingCard pricing={pricing} key={i} />
         })
@@ -21,4 +21,4 @@ class PricingSectionContainer extends React.Component {
     }
   }
 
-export default PricingSectionContainer;
+export default PricingContainer;

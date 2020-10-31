@@ -1,0 +1,133 @@
+.pricingCard {
+    position: relative;
+    max-width: 300px;
+    border: 1px solid #b0bbbf;
+    border-radius: 3px;
+    -webkit-box-flex: 1;
+    flex: 1;
+    margin: 10px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-bottom: 25px;
+    text-align: center;
+    border-top: 10px solid #b0bbbf;
+    border-radius: 5px;
+  }
+  
+  .pricingCard h2 {
+    margin-bottom: 0;
+    font-size: 2.4em;
+  }
+  
+  .title {
+    background: white;
+    padding: 20px 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 1.em;
+    color: grey;
+  }
+  
+  .pricingCard.popular {
+    border-top: 10px solid #0fb682;
+    border-radius: 5px;
+  }
+  
+  .pricingCard.popular .title {
+    background: white;
+    color: black;
+  }
+  
+  .pricingCard.popular .bttn {
+    background: #0fb682;
+    color: white;
+  }
+  .pricingCard.popular .bttn:hover {
+    background: #0fb682;
+  }
+  
+  .bttn {
+    display: block;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 1em;
+    border-radius: 3px;
+    padding: 8px 15px;
+    margin: 0 25px;
+    background: #b0bbbf;
+    color: white;
+  }
+  .bttn:hover {
+    background: grey;
+  }
+  
+  .pricingCard .price-overview {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .pricingCard.popular .btn {
+    background: #0fb682;
+  }
+  
+  .price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
+  }
+  
+  .price .price-currency {
+    font-size: 0.8em;
+    padding-right: 3px;
+    vertical-align: top;
+    margin-top: 2%;
+  }
+  
+  .price .price-dollar {
+    font-size: 1.7em;
+  }
+  
+  .card {
+    padding: 0px 25px 20px;
+  }
+  
+  .price-desc {
+    font-size: 0.8em;
+    margin-top: 0;
+    color:#0fb682
+  }  
+
+  .valued-title {
+    color:#b0bbbf;
+    font-size: 0.8em;
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li.description {
+    position: relative;
+  }
+  
+  li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='18' height='18' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>") no-repeat;
+  }
+  
+  .badge {
+    max-width: 30%;
+    position: absolute;
+    right: 0;
+    top: -10px;
+  }

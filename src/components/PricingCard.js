@@ -1,5 +1,6 @@
 import React from 'react';
 import badge from '../img/img_card-badge.png'
+import '../css/PricingCard.css'
 
 class PricingCard extends React.Component {
 
@@ -23,17 +24,17 @@ class PricingCard extends React.Component {
         }
 
         return (
-            <div className={"pricingCard " + (isPopular ? 'featured' : '')}>
+            <div className={"pricingCard " + (isPopular ? 'popular' : '')}>
                 {renderBadge()}
                 <div className="title">
                     {title}
                 </div>
         
                 <div className="card">
-                    <p className="valued__title">{valuedTitle}</p>
+                    <p className="valued-title">{valuedTitle}</p>
                     <h2 className="price">
-                        <span className="price__currency">$</span>
-                        <span className="price__dollar">{price}</span>
+                        <span className="price-currency">$</span>
+                        <span className="price-dollar">{price}</span>
                     </h2>
         
                     <p className="price-desc">{promo}</p>

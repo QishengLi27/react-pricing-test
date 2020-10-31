@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import PricingSectionContainer from './components/PricingSectionContainer.js'
+import PricingContainer from './components/PricingContainer.js'
 
 const pricingsData = {
 
@@ -38,7 +38,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <PricingSectionContainer pricingsData={pricingsData}></PricingSectionContainer>
+        <PricingContainer pricingsData={pricingsData}></PricingContainer>
       </div>
     );
   }
